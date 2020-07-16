@@ -2,7 +2,6 @@ package com.comet.payone
 
 import android.content.Context
 import android.util.Log
-import androidx.room.Room
 import com.comet.payone.callback.POMCallback
 import com.comet.payone.data.POQrcodeImage
 import com.comet.payone.data.POStore
@@ -68,7 +67,6 @@ class POManager(applicationContext: Context) {
     }
 
     fun Start(listener: POMCallback) {
-
         val mcid: String = this.mcid
         val uuid: String = this.uuid
         val pnConfiguration = PNConfiguration()
